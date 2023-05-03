@@ -1,0 +1,329 @@
+/* navbar start */
+html {
+  font-family: 'Noto Sans';
+  font-size: 1.2em;
+  background: #eeeeee;
+}
+
+ul {
+  position: relative;
+  width: 27em;
+  height: 2em;
+  padding: 0;
+  white-space: wrap;
+}
+
+ul li {
+  display: inline;
+  text-align: center;
+}
+
+ul li a {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 25em;
+  bottom: 0;
+  display: inline-block;
+  /* -moz-box-sizing: border-box; */
+  box-sizing: border-box;
+  /* padding: .4em .2em; */
+  color: #568fa6;
+  text-decoration: none;
+  text-shadow: 0 1px 0 white;
+
+  /*transition*/
+  -webkit-transition: width .3s, right .3s;
+  -moz-transition: width .3s, right .3s;
+  -o-transition: width .3s, right .3s;
+  transition: width .3s, right .3s;
+}
+
+ul li:nth-child(1) a {
+  width: 2em;
+}
+
+ul li:nth-child(2) a {
+  width: 4em;
+}
+
+ul li:nth-child(3) a {
+  width: 4em;
+}
+
+ul li:last-child a::after {
+  content: "";
+  position: absolute;
+  right: inherit;
+  bottom: -3px;
+  width: inherit;
+  height: 3px;
+  pointer-events: none;
+  /*transition*/
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+ul li:nth-child(1)~li:last-child a {
+  right: 25em;
+  width: 2em;
+}
+
+ul li:nth-child(2):hover~li:last-child a {
+  right: 21em;
+  width: 4em;
+}
+
+ul li:nth-child(3):hover~li:last-child a {
+  right: 17em;
+  width: 4em;
+}
+
+
+ul li:hover~li:last-child a::after,
+ul li:last-child:hover a::after {
+  background: #44d8a4;
+}
+
+ul li:last-child a {
+  min-width: 5em;
+  max-width: 5em;
+}
+
+ul li a:hover,
+ul li a:focus {
+  color: #44d8a4;
+  tran container: scale(1.3);
+    text-shadow: 2px 5px 5px rgb(85, 80, 82);
+    backdrop-filter: grayscale(30%);
+  /*transition*/
+  -webkit-transition: width .3s, right .3s, background-color .3s;
+  -moz-transition: width .3s, right .3s, background-color .3s;
+  -o-transition: width .3s, right .3s, background-color .3s;
+  transition: width .3s, right .3s, background-color .3s;
+}
+
+ul li a:focus {
+  transition:.2s;
+
+}
+
+/* navbar end */
+/*  */
+
+section container{
+  width:80%;
+  padding:0%;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 8px;
+  flex-wrap: nowrap;
+  background-color: white;
+  border-radius: 20px;
+  display:grid;
+}
+section container h3{
+  text-align: center;
+}
+section container div{
+margin-left: 20px;
+line-height: 40px;
+justify-self: end;
+}
+
+@media(max-width:1400px)  {
+ container{
+  max-width: 1200px;
+  min-width:400px;
+  }
+}
+
+section container div:before{
+  display:inline-box;
+font-size:1em;
+}
+
+section container div:hover{
+    display: inline-box;
+      font-size: 1.2em;
+}
+section container div:after{
+    display: inline-box;
+      font-size: 1em;
+}
+
+section container button{
+  display: block;
+  text-align: left;
+  /* margin-right:20px; */
+  /* margin:0 auto; */
+ }  container button, container button *, container button :after, container button :before, container button:after, container button:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+ container button {
+  -webkit-tap-highlight-color: transparent;
+  /* -webkit-appearance: button; */
+  background-color: white;
+  background-image: none;
+  color: black;
+  cursor: pointer;
+  /* font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; */
+  font-size: 100%;
+  /* font-weight: 900; */
+  line-height: 1;
+  margin: 0 auto;
+  /* -webkit-mask-image: -webkit-radial-gradient(#000, #fff); */
+  /* padding: 0; */
+  text-tran container: uppercase;
+    /* margin: 0 auto; */
+}
+ container button:disabled {
+  cursor: default;
+}
+ container button:-moz-focusring {
+  outline: auto;
+}
+ container button svg {
+  display: block;
+  /* vertical-align: middle; */
+}
+ container button [hidden] {
+  display: none;
+}
+ container button {
+  border-radius: 99rem;
+  border-width: 1px;
+  padding: 0.5rem 2rem;
+  margin:0 auto;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+ container button:hover {
+  color: #999;
+}
+ container a{
+    color: black;
+      text-decoration: none;
+      font-family: 'Noto Sans';
+    }
+
+
+
+
+section container{
+  width:80%;
+  padding:0%;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10px;
+  flex-wrap: nowrap;
+  background-color: white;
+  border-radius: 20px;
+  display:grid;
+  margin-bottom:40px;
+}
+section container h3{
+  text-align: center;
+}
+section container div{
+margin-left: 20px;
+line-height: 40px;
+justify-self: end;
+}
+
+@media(max-width:1400px)  {
+ container{
+  max-width: 1200px;
+  min-width:400px;
+  }
+}
+
+section container div:before{
+  display:inline-box;
+font-size:1em;
+}
+
+section container div:hover{
+    display: inline-box;
+      font-size: 1.2em;
+}
+section container div:after{
+    display: inline-box;
+      font-size: 1em;
+}
+
+section container button{
+  display: block;
+  text-align: left;
+  /* margin-right:20px; */
+  /* margin:0 auto; */
+ }  container button, container button *, container button :after, container button :before, container button:after, container button:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+ container button {
+  -webkit-tap-highlight-color: transparent;
+  /* -webkit-appearance: button; */
+  background-color: white;
+  background-image: none;
+  color: black;
+  cursor: pointer;
+  /* font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; */
+  font-size: 100%;
+  /* font-weight: 900; */
+  line-height: 1;
+  margin: 0 auto;
+  /* -webkit-mask-image: -webkit-radial-gradient(#000, #fff); */
+  /* padding: 0; */
+  text-tran container: uppercase;
+    /* margin: 0 auto; */
+}
+ container button:disabled {
+  cursor: default;
+}
+ container button:-moz-focusring {
+  outline: auto;
+}
+ container button svg {
+  display: block;
+  /* vertical-align: middle; */
+}
+ container button [hidden] {
+  display: none;
+}
+ container button {
+  border-radius: 99rem;
+  border-width: 1px;
+  padding: 0.5rem 2rem;
+  margin:0 auto;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+ container button:hover {
+  color: #999;
+}
+  container a{
+    color: black;
+      text-decoration: none;
+      font-family: 'Noto Sans';
+    }
+
+button {
+  display: block;
+  font-family: 'Noto Sans';
+  font-size:1.5rem;
+  border-radius: 99rem;
+  border-width: 1px;
+  padding: 0.5rem 2rem;
+  margin: 0 auto;
+  margin-bottom:20px;
+  /* /* margin-bottom: 20px; */
+   /* margin-top: 40px;  */
+}

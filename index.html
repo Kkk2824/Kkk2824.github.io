@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap" rel="stylesheet">
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"></script>
+
+  <link rel="php" href="./main.php">
+  <title>multi choose</title>
+</head>
+
+<body>
+    <ul class="nav_title justify-center">
+      <li><a href="#"></a></li>
+      <li><a href="#"> Test </a></li>
+      <li><a href="#btnsubmit"> Result </a></li>
+    </ul>
+
+<section id="section1" name="Question"> 
+<!-- <card> -->
+  <form class="form-1">
+      <container>
+    <oi>
+      <h3>Q1</h3>
+      <p>
+        <h3><strong>[JavaScript]</strong>How do you write "Hello World" in an alert box?</h3>
+      <div>
+      <!-- <radio type="button" id="Q1-a"></radio> -->
+      <input type="radio"id="Q1-a" name="radio1" value="0">A ) msgBox("Hello World")
+      </div>
+      <div>
+      <input type="radio" id="Q1-b" name="radio1" value="0">B) msg("Hello World")
+      </div>
+      <div>
+      <input type="radio" id="answer1" name="radio1" value="1">C) alert("Hello World")
+      </div>
+      <div>
+      <input type="radio" id="Q1-d" name="radio1" value="0">D) alertBox("Hello World")
+      </div>
+</p>
+</li>
+    </oi> 
+    <!-- <button class="nextqu"><a href="#Q2">Next Question</a>
+    </button> -->
+<!-- </card> -->
+</container>
+  </section>
+
+
+    <section id="section2" name="Question">
+      <!-- <card> -->
+        <form class="form-2">
+          <container >
+            <oi>
+              <h3>Q2</h3>
+              <p>
+              <h3>Is JavaScript case-sensitive?</h3>
+              <div>
+                <!-- <radio type="button" id="Q1-a"></radio> -->
+                <input type="radio" id="answer2" name="radio2" value="1">A) True
+              </div>
+              <div>
+                <input type="radio" id="Q2-b" name="radio2" value="0">B) False
+              </div>
+              </p>
+              </li>
+      </container>
+    </section>
+
+
+    <section id="section3" name="Question">   
+        <form class="form-3">
+          <container >
+            <oi>
+              <h3>Q3</h3>
+              <p>
+              <h3>Which HTML attribute is used to define inline styles?</h3>
+              <div>
+                <!-- <radio type="button" id="Q1-a"></radio> -->
+                <input type="radio" id="Q3-a" name="radio3" value="0">A) font
+              </div>
+              <div>
+                <input type="radio" id="Q3-b" name="radio3" value="0">B) Class
+              </div>
+              <div>
+                <input type="radio" id="answer3" name="radio3" value="1">C) style
+              </div>
+              <div>
+                <input type="radio" id="Q3-d" name="radio3" value="0">D) None of the above
+              </div>
+              </p>
+              </li>
+            </oi>
+      </container>
+    </section>
+
+    <section id="section4" name="Question">
+      <form class="form-4">
+        <container>
+          <oi>
+            <h3>Q4</h3>
+            <p>
+            <h3>Inside which HTML element do we put the JavaScript?</h3>
+            <div>
+              <!-- <radio type="button" id="Q1-a"></radio> -->
+              <input type="radio" id="Q4-a" name="radio4" value="0">A) &lt; scripting &lt;
+            </div>
+            <div>
+              <input type="radio" id="Q4-b" name="radio4" value="0">B) &lt; javascript &lt;
+            </div>
+            <div>
+              <input type="radio" id="Q4-c" name="radio4" value="0">C) &lt; js &lt;
+            </div>
+            <div>
+              <input type="radio" id="answer4" name="radio4" value="1">D) None of the above
+            </div>
+            </p>
+            </li>
+          </oi>
+          <!-- <button class="nextqu"><a herf="#Q5">Next Question</a>
+          </button> -->
+        </container>
+    </section>
+
+    <section id="section5" name="Question">
+      <form class="form-5">
+        <container>
+          <oi>
+            <h3>Q5</h3>
+            <p>
+            <h3>What is the correct syntax for referring to an external script called "xxx.js"?</h3>
+            <div>
+              <!-- <radio type="button" id="Q1-a"></radio> -->
+              <input type="radio" id="Q5-a" name="radio5" value="0">A) &lt;script href="xxx.js" &lt;
+            </div>
+            <div>
+              <input type="radio" id="answer5" name="radio5" value="1">B) &lt; script src="xxx.js" &lt;
+            </div>
+            <div>
+              <input type="radio" id="Q5-c" name="radio5" value="0">C) &lt; script name="xxx.js" &lt;
+            </div>
+            </p>
+            </li>
+          </oi>
+        </container>
+    </section>
+
+    <section id="section6" name="Question">
+      <form class="form-6">
+        <container>
+          <oi>
+            <h3>Q6</h3>
+            <p>
+            <h3>How to write an IF statement in JavaScript?</h3>
+            <div>
+              <!-- <radio type="button" id="Q1-a"></radio> -->
+              <input type="radio" id="answer6" name="radio6" value="1">A) if (i == 5)
+            </div>
+            <div>
+              <input type="radio" id="Q6-b" name="radio6" value="0">B) if i = 5
+            </div>
+            <div>
+              <input type="radio" id="Q6-c" name="radio6" value="0">C) if i = 5 then
+            </div>
+            <div>
+              <input type="radio" id="Q6-d" name="radio6" value="0">D) if i == 5 then
+            </div>
+            </p>
+            </li>
+          </oi>
+        </container>
+    </section>
+
+  <section id="section7" name="Question">
+    <form class="form-7">
+      <container>
+        <oi>
+          <h3>Q7</h3>
+          <p>
+          <h3>How to write an IF statement for executing some code if "i" is NOT equal to 5?</h3>
+          <div>
+            <!-- <radio type="button" id="Q1-a"></radio> -->
+            <input type="radio" id="Q7-a" name="radio7" value="0">A) if (i <> 5)
+          </div>
+          <div>
+            <input type="radio" id="answer7" name="radio7" value="1">B) if (i != 5)
+          </div>
+          <div>
+            <input type="radio" id="Q7-c" name="radio7" value="0">C) if i <> 5
+          </div>
+          <div>
+            <input type="radio" id="Q7-d" name="radio7" value="0">D) if i =! 5 then
+          </div>
+          </p>
+          </li>
+        </oi>
+        <!-- <button class="nextqu"><a herf="#Q8">Next Question</a>
+        </button> -->
+      </container>
+  </section>
+
+<section id="section8" name="Question">
+  <form class="form-8">
+    <container>
+      <oi>
+        <h3>Q8</h3>
+        <p>
+        <h3>How does a FOR loop start?</h3>
+        <div>
+          <!-- <radio type="button" id="Q1-a"></radio> -->
+          <input type="radio" id="Q8-a" name="radio8" value="0">A) for i = 1 to 5
+        </div>
+        <div>
+          <input type="radio" id="answer8" name="radio8" value="1">B) for (i = 0; i <= 5; i++)
+        </div>
+        <div>
+          <input type="radio" id="Q8-c" name="radio8" value="0">C) for (i <= 5; i++)
+        </div>
+        <div>
+          <input type="radio" id="Q8-d" name="radio8" value="0">D) for (i = 0; i <= 5)
+        </div>
+        </p>
+        </li>
+      </oi>
+    </container>
+
+  
+ 
+
+</section>
+    <div>
+       <button class="submit" id="btnsubmit" name="btnsubmit" onclick="calculateScore()">Submit</a>
+      </button>
+    </div>
+
+<p id="total-score"></p>
+
+<!-- 
+<form id="submitform d-block t-center" > -->
+  <!-- <input type="datetime" id="timetaken" name="timetaken">
+  <input type="text" id="accuracy" onclick="myfunction(scoreContainer)" name="accuracy">
+    <input type="text" id="submissiondatetime" name="submissiondatetime">  -->
+
+    <?php include 'main.php'; ?>
+
+  <script language="javascript" src="./main.js" /></script>
+
+</body>
+</html>
